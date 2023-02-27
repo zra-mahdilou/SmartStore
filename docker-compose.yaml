@@ -1,0 +1,12 @@
+
+version: '3'
+services:
+  database:
+    image: 'postgres:15.1'
+    ports:
+      - 5432:5432
+
+    environment:
+      POSTGRES_USER: smartStore
+      POSTGRES_PASSWORD: sm135
+      POSTGRES_DB: store_db
